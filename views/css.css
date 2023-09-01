@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainbox{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.searchtext{
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: solid;
+    font-weight: bold;
+}
+
+.searchmain{
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+	  /* background-color: #17141d; */
+
+}
+
+.searchbox{
+    margin: auto;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    /* margin-top: 4%; */
+    height: 60%;
+    width: 80%;
+    /* margin: auto; */
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.search button{
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(25, 163, 209);
+    opacity: .8;
+    color: white;
+}
+
+.search{
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid black;
+    /* border-radius: 20px; */
+    background-color: #17141d;
+    padding-top: 4%;
+    
+}
+
+.search button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.jobs{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.jobsfilter{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid black;
+    justify-content: center;
+    background-color: #17141d;
+    color: white;
+    padding-bottom: 100%;
+
+}
+
+.jobslist{
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+    @media screen and (max-width: 991px) {
+        grid-template-columns: 1fr;
+    }
+    overflow-y: scroll;
+}
+
+.jobsfilter h2{
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 4%;
+    padding: 0;
+    font-size: medium;
+    text-align: left;
+    width: 100%;
+    height: 20%;
+    text-transform: capitalize;
+    text-decoration: solid;
+}
+
+.jobsfilter input{
+    margin: 0;
+    margin-top: 4%;
+    padding: 10px;
+    width: 100%;
+    height: 80%;
+}
+
+.jobsfilter .filterbox{
+    margin: auto;
+    margin-top: 4%;
+    padding: 4%;
+    width: 80%;
+    height: 10%;
+}
+
+.itemcard{
+    margin: auto;
+    margin-top: 4%;
+    padding: 0;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gold;
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    background-clip: padding-box;
+    border-radius: 20px;
+    padding: 20px;
+    img {
+      margin-bottom: 32px;
+    }
+}
+
+.itemimg{
+    margin: 0;
+    padding: 4%;
+    width: 10%;
+    height: 100%;
+
+
+}
+
+.itemimg img{
+    width: 100%;
+    height: 100%;
+}
+
+.job{
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 20%;
+    text-decoration: solid;
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: 600;
+    color: white;
+    letter-spacing: -0.02em;
+    line-height: 40px;
+    font-style: normal;
+    font-size: 28px;
+    padding-bottom: 8px;
+    /* opacity: .8; */
+}
+
+.jobcompany{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 20%;
+    font-size: medium;
+    text-decoration: solid;
+    text-transform: capitalize;
+    text-align: left;
+    color: white;
+    /* opacity: .8; */
+}
+
+.jobdesc{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60%;
+    text-align: justify;
+}
+
+.descimg{
+    width: 4%;
+    height: 4%;
+}
+
+.newjobdesc{
+    color: white;
+}
+
+.itemcard button{
+    margin: 0;
+    margin-right: 0;
+    width: 20%;
+    height: 100%;
+    justify-content: right;
+}
+
+.itemcard button img{
+    margin: 4%;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #0095ff;
+}
+
+
+/* CSS */
+button{
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  /* margin: 0; */
+  margin-right: 0;
+  outline: none;
+  /* padding: 8px .8em; */
+  /* position: relative; */
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  /* white-space: nowrap; */
+}
+
+.itemcard button:hover,
+.itemcard button:focus {
+  background-color: #07c;
+}
+
+.itemcard button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.itemcard button:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+
+
+/*   DESKTOP DEMO OF SVG EFFECTS. */
+
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+html {
+	height: 100%;
+}
+
+.newpages .header {
+	width: 100%;
+	height: 75px;
+    display: flex;
+    flex-direction: row;
+	background: #17141d;
+	opacity: 0.95;
+	overflow: hidden;
+	-webkit-box-shadow: #333 1px 3px 4px;
+	-moz-box-shadow: #333 1px 3px 4px;
+	box-shadow: #333 1px 3px 4px;
+}
+
+.newpages h1 {
+	letter-spacing: 4px;
+	padding: .4em;
+	color: white;
+	background-color: #17141d;
+	opacity: 0.8;
+}
+
+.aurjobs{
+    justify-content: left;
+    margin: auto;
+    width: 20%;
+    height: 100%;
+}
+
+.newpages svg.line-top {
+	width: 100%;
+	background-color: #17141d;
+}
+.newpages svg.line-bottom {
+	width: 100%;
+}
+.menu {
+	width: 750px;
+	margin: 0 auto;
+}
+.newpages ul {
+	padding: 0;
+	margin: 0;
+}
+
+.newpages ul li {
+	margin: 0;
+	padding: 10px 0 10px 0;
+	width: 25%;
+	height: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	letter-spacing: 3.5px;
+	transition: all 0.5s ease-out;
+}
+
+.newpages li.active {
+	color: orange;
+	transform: scale(1.1);
+}
+
+.newpages polygon {
+	stroke-width: 2px;
+	stroke: orange;
+	fill: orange;
+}
+
+@media (max-device-width: 991px) {
+	.header {
+		height: 64px;
+	}
+
+	body {
+		font-size: 0.4em;
+	}
+	.content {
+		height: calc(100% - 64px);
+	}
+}
+
+
+/* body {
+    background-color: black;
+  } */
+  
+  .container {
+    width: 1200px !important;
+    padding: 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+  
+    @media screen and (min-width: 992px) and (max-width: 1439px) {
+      max-width: 1279px !important;
+      padding: 0 !important;
+      margin: 0 80px !important;
+      width: auto !important;
+    }
+  
+    @media screen and (max-width: 991px) {
+      max-width: 959px !important;
+      margin: 0 16px !important;
+      padding: 0 !important;
+      width: auto !important;
+    }
+  }
+  
+  .gradient-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 30px;
+    @media screen and (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .container-title {
+    text-align: center;
+    padding: 0 !important;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 60px;
+  }
+  
+  .card {
+    max-width: 550px;
+    border: 0;
+    width: 100%;
+    margin-inline: auto;
+  }
+  
+  .container-card {
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    background-clip: padding-box;
+    border-radius: 45px;
+    padding: 40px;
+    img {
+      margin-bottom: 32px;
+    }
+  }
+  
+  .bg-green-box,
+  .bg-white-box,
+  .bg-yellow-box,
+  .bg-blue-box {
+    position: relative;
+  }
+  
+  .bg-green-box::after,
+  .bg-white-box::after,
+  .bg-yellow-box::after,
+  .bg-blue-box::after {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    content: "";
+    z-index: -1;
+    border-radius: 45px;
+  }
+  
+  .bg-green-box::after {
+    background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+  }
+  
+  .bg-white-box::after {
+    background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+  }
+  
+  .bg-yellow-box::after {
+    background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+  }
+  
+  .bg-blue-box::after {
+    background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+  }
+  

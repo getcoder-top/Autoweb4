@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css.css" type="text/css">
+</head>
+<body>
+    <div class="mainbox">
+    <div class="newpages">
+        <div class="header">
+            <h1 class="aurjobs">Aurjobs</h1>
+            <div class="menu">
+             <svg class="line-top" width="750" height="15" viewbox="0,0 1000,20">
+              <line
+               class="line-dash"
+               x1="0"
+               y1="15"
+               x2="1000"
+               y2="15"
+               style="stroke: orange; stroke-width:2; stroke-linecap:round; stroke-dasharray: 180,1200; stroke-dashoffset: -35;"
+              />
+             </svg>
+             <ul>
+                <li>Home</li><li>Gallery</li><li>Contact</li><li>About</li>
+             </ul>
+             <svg class="line-bottom" width="750" height="30" viewbox="0,0 1000,40">
+              <polygon class="lb" points="35,53 115,53 125,43 135,53 215,53" />
+              <polygon class="lb" points="285,53 365,53 375,43 385,53 465,53" />
+           
+              <polygon class="lb" points="535,53 615,53 625,43 635,53 715,53" />
+           
+              <polygon class="lb" points="785,53 865,53 875,43 885,53 965,53" />
+             </svg>
+            </div>
+           </div>
+           
+    </div>
+    <form action="/search">
+    <section class="search">
+        <div class="searchmain">
+        <div class="searchbox">
+        <input type="text" name="search" class="searchtext" id="search" placeholder="Company name">
+        <button type="submit">Find</button>
+        </div>
+        </div>
+    </section>
+    <section class="jobs">
+
+    <section class="jobsfilter">
+        <div class="filterbox">
+        <h2>job Category</h2>
+        <input type="text" name="category" class="category" id="category">
+        </div>
+        <div class="filterbox">
+        <h2>job location</h2>
+        <input type="text" name="location" class="location" id="location">
+        </div>
+        <div class="filterbox">
+        <h2>job type</h2>
+        <input type="text" name="jobtype" class="jobtype" id="jobtype">
+        </div>
+    </section>
+    </form>
+    <section class="jobslist">
+            <% data.forEach(sample => { %>
+        <div class="itemcard">
+            <div class="itemimg">
+                <!-- img <%= sample.sno %> -->
+                <img src="avatar.png">
+            </div>
+            <div class="job">
+            <h1 class="title">
+                <%= sample.title %>
+            </h1>
+            <h2 class="jobcompany">
+                <%= sample.company %>
+            </h2>
+            <p class="jobdesc">
+                <ul>
+                    <li class="newjobdesc"><img src="job-description.png" alt="" class="descimg"> <%= sample.category %> </li>
+                    <li class="newjobdesc"><img src="location.png" alt="location" class="descimg"> <%= sample.location %> </li>
+                    <li class="newjobdesc"><img src="application.png" alt="jobtype" class="descimg"> <%= sample.jobtype %> </li>
+                </ul>
+                <!-- <%= sample.desc %> -->
+            </p>
+            </div>
+            <!-- <%= sample.link %> -->
+            <form action="/itempage">
+            <!-- <div class="joblink" id="joblink"> -->
+            <input type="hidden" name="joblink" class="joblink" id="joblink" value=<%= sample.sno %>>
+            <!-- <h4 class="joblink" id="joblink"><%= sample.link %></h4> -->
+            <!-- </div> -->
+            <button type="submit"><img src="images1.png" alt=""></button>
+            </form>
+        </div>
+        <% }) %>
+    </section>
+    
+    </section>
+    </div>
+
+    <!-- <script src="hide.js"></script> -->
+    <!-- <script src="js.js"></script> -->
+    <script src="js.js"></script>
+
+</body>
+</html>

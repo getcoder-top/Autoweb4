@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainbox{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.searchtext{
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+    text-align: left;
+}
+
+.searchbox{
+    margin: auto;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    margin-top: 4%;
+    height: 60%;
+    width: 80%;
+    /* margin: auto; */
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search button{
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(25, 163, 209);
+    opacity: .8;
+    color: white;
+}
+
+.search{
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid black;
+}
+
+.search button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.jobs{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.jobsfilter{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid black;
+    justify-content: center;
+
+}
+
+.jobslist{
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+}
+
+.jobsfilter input{
+    margin: auto;
+    margin-top: 4%;
+    padding: 10px;
+    width: 80%;
+    height: 10%;
+}
+
+.itemcard{
+    margin: auto;
+    margin-top: 4%;
+    padding: 0;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.job{
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40%;
+}
+
+.jobdesc{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60%;
+}
