@@ -68,7 +68,7 @@
         <div class="itemcard">
             <div class="itemimg">
                 <!-- img <%= sample.sno %> -->
-                <img src="avatar.png">
+                <img src=<%= sample.imglink %>>
             </div>
             <div class="job">
             <h1 class="title">
@@ -92,7 +92,7 @@
             <input type="hidden" name="joblink" class="joblink" id="joblink" value=<%= sample.sno %>>
             <!-- <h4 class="joblink" id="joblink"><%= sample.link %></h4> -->
             <!-- </div> -->
-            <button type="submit"><img src="images1.png" alt=""></button>
+            <button type="submit">Apply</button>
             </form>
         </div>
         <% }) %>

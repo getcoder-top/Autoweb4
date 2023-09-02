@@ -229,8 +229,8 @@
 .itemcard button{
     margin: 0;
     margin-right: 0;
-    width: 20%;
-    height: 100%;
+    width: 60px;
+    height: 25%;
     justify-content: right;
 }
 
