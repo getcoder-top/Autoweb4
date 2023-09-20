@@ -145,6 +145,10 @@ app.get("/search",(requests,response) =>{
     else{
         response.redirect('/');
     }
+
+    if(category != '' || location != '' || jobtype != ''){
+        newjob4 = 'SELECT * jobs4 at t where (t.category OR t.location OR t.jobtype) LIKE (' +"'"+category+"'"+ ' OR ' +"'"+location+"'"+ ' OR ' + "'"+jobtype+"')";
+    }
     
 })
 

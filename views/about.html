@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div class="newpages">
+    <div class="header">
+        <h1 class="aurjobs">Aurjobs</h1>
+        <div class="menu">
+         <svg class="line-top" width="750" height="15" viewbox="0,0 1000,20">
+          <line
+           class="line-dash"
+           x1="0"
+           y1="15"
+           x2="1000"
+           y2="15"
+           style="stroke: orange; stroke-width:2; stroke-linecap:round; stroke-dasharray: 180,1200; stroke-dashoffset: -35;"
+          />
+         </svg>
+         <ul>
+            <li>Home</li><li>Gallery</li><li>Contact</li><a href="about.html"><li>About</li></a>
+         </ul>
+         <svg class="line-bottom" width="750" height="30" viewbox="0,0 1000,40">
+          <polygon class="lb" points="35,53 115,53 125,43 135,53 215,53" />
+          <polygon class="lb" points="285,53 365,53 375,43 385,53 465,53" />
+       
+          <polygon class="lb" points="535,53 615,53 625,43 635,53 715,53" />
+       
+          <polygon class="lb" points="785,53 865,53 875,43 885,53 965,53" />
+         </svg>
+        </div>
+       </div>
+       </div>
+    <section class="heading">
+        <h1>Aurjobs</h1>
+        <h2>Find your jobs today</h2>
+    </section>
+    <section class="main">
+        <h1>Founders</h1>
+        <div class="newpage">
+        <!-- <h1>Founders</h1> -->
+        <!-- <div class="newfounder"> -->
+            <div class="newdetails">
+            <h1>Keshav Agarwal</h1>
+            <h2>CEO, CTO - Aurjobs</h2>
+            <p>
+                Software Developer and Founder of aurjobs.com, a online EdTech platform where people can find jobs and get consulting and courses for the jobs they are applying.
+            </p>
+            <p class="newcontact">
+            <a href="https://www.linkedin.com/in/keshav-agarwal-805757220"><h2></h2><img  class="contacticon1" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin https://www.linkedin.com/in/keshav-agarwal-805757220"/></a>
+            <a href="https://www.instagram.com/keshav_king_7/"><img class="contacticon1"  src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Aurjobs Founder Contact https://www.instagram.com/keshav_king_7/"></a>
+            <a href=""><img class="contacticon1"  src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1"></a>
+            <a href=""><img class="contacticon1"  src="https://img.icons8.com/color/48/stackoverflow.png" alt="stackoverflow"/></a>
+            </p>
+            </div>
+            <div class="newimg">
+                <img src="download (7).jpg" alt="">
+            </div>
+        <!-- </div> -->
+        </div>
+    </section>
+    <section class="contact">
+        <h1>Contact</h1>
+        <p>
+<div class="wrapper centered">
+  <article class="letter">
+    <div class="side">
+      <p>
+        <textarea placeholder="Your message"></textarea>
+      </p>
+    </div>
+    <div class="side">
+      <p>
+        <input type="text" placeholder="Your name" >
+      </p>
+      <p>
+        <input type="email" placeholder="Your email" >
+      </p>
+      <p>
+        <button id="sendLetter">Send</button>
+      </p>
+    </div>
+  </article>
+  <div class="envelope front"></div>
+  <div class="envelope back"></div>
+</div>
+<p class="result-message centered">Thank you for your message</p>
+        </p>
+    </section>
+    <script>
+        function addClass() {
+            document.body.classList.add("sent");
+          }
+          
+          sendLetter.addEventListener("click", addClass);
+    </script>
+</body>
+</html>

@@ -21,7 +21,7 @@ databasejobs = mycursor.execute(databasejob)
 y=0
 
 while True:
-    url = 'https://yandex.com/jobs/vacancies/?text='
+    url = 'https://www.google.com/about/careers/applications/jobs/results/'
     response = requests.get(url)
     getdata = bs(response.text,"html.parser")
     # jobdata = getdata.find_all('div', 'sjci')
