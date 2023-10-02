@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ .newcourselist {
+    font-family: sans-serif;
+    font-weight: 300;
+    color: hsl(0 0% 15%);
+  }
+  
+.newcourselist  h2 {
+    font-weight: 400;
+    margin: 2rem 0 0.25rem 0;
+  }
+  
+.newcourselist  h1 {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    opacity: 0.5;
+    margin: 0;
+  }
+  
+.newcourselist  p {
+    margin: 0;
+  }
+  
+.newcourselist {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+  
+.newcourselist  figure {
+    width: 500px;
+    aspect-ratio: 8 / 5;
+    --bg: hsl(330 80% calc(90% - (var(--hover) * 10%)));
+    --accent: hsl(280 80% 40%);
+    transition: background 0.2s;
+    background: 
+      radial-gradient(circle at top left, var(--accent), transparent 75%),
+      var(--bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+  }
+  
+.newcourselist  figure:after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 10%;
+    background: linear-gradient(-65deg, var(--bg) 50%, var(--accent) 50%);
+    filter: blur(25px);
+    transform:
+      translateX(calc(var(--hover) * 15%))
+      scale(calc(1 + (var(--hover) * 0.2)));
+    transition: transform 0.2s, background 0.2s;
+  }
+  
+.newcourselist  img {
+    position: absolute;
+    /* left: 10%; */
+    /* top: 5%; */
+    /* margin: 2%; */
+    width: 100%;
+    height: 100%;
+    /* right: -5%; */
+    /* transform:
+      translateX(calc(var(--hover) * -15%))
+      scale(calc(1 + (var(--hover) * 0.2))); */
+    /* transition: transform 0.2s; */
+  }
+  
+.newcourselist h1{
+    position: absolute;
+    width: 20%;
+    transform:
+      translateX(calc(var(--hover) * -15%))
+      scale(calc(1 + (var(--hover) * 0.2)));
+    transition: transform 0.2s;
+}
+.newcourselist  article {
+    --hover: 0;
+  }
+  
+.newcourselist  article:hover {
+    --hover: 1;
+  }

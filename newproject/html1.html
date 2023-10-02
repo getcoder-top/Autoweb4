@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Debugging and Feature Enhancement Assignment</title>
+<script src="app.js" async></script>
+</head>
+<body>
+<h1>User List</h1>
+<div id="usersList"></div>
+<script>
+    // Simulated user data fetch function (meant to represent an API call)
+function fetchUsers(callback) {
+    setTimout(() => {
+    callback([
+    { id: 1, name: 'Alice', },
+    { id: 2, name: 'Bob', },
+    { id: 3, name: 'Catherine', },
+    ]);
+    }, 1000);
+    }
+    // Function to display users
+    function displayUsers(users) {
+    const userListDiv = document.querySelector('#userList');
+    users.forEach((user) => {
+    const userDiv = document.createElement('div');
+    userDiv.innerhtml = `${user.name}`;
+    userListDiv.appendChild(userDiv);
+    });
+    }
+    // Fetch and display users
+    fetchUsers((user) => {
+    displayUsers(users)
+    });
+</script>
+</body>
+</html>
