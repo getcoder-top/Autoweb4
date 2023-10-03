@@ -3,35 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <title>Debugging and Feature Enhancement Assignment</title>
+<link rel="stylesheet" href="css1.css">
 <script src="app.js" async></script>
 </head>
 <body>
-<h1>User List</h1>
-<div id="usersList"></div>
-<script>
-    // Simulated user data fetch function (meant to represent an API call)
-function fetchUsers(callback) {
-    setTimout(() => {
-    callback([
-    { id: 1, name: 'Alice', },
-    { id: 2, name: 'Bob', },
-    { id: 3, name: 'Catherine', },
-    ]);
-    }, 1000);
-    }
-    // Function to display users
-    function displayUsers(users) {
-    const userListDiv = document.querySelector('#userList');
-    users.forEach((user) => {
-    const userDiv = document.createElement('div');
-    userDiv.innerhtml = `${user.name}`;
-    userListDiv.appendChild(userDiv);
-    });
-    }
-    // Fetch and display users
-    fetchUsers((user) => {
-    displayUsers(users)
-    });
-</script>
+    <div class="newpage">
+        <h1>User List</h1>
+        <div class="search">
+            <form action="">
+                <input type="search" class="searchuser" name="searchuser" id="searchuser">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div id="usersList"></div>
+    </div>
+    <script>
+        // Simulated user data fetch function (meant to represent an API call)
+        function fetchUsers(callback) {
+            setTimout(() => {
+            callback([
+            { id: 1, name: 'Alice', },
+            { id: 2, name: 'Bob', },
+            { id: 3, name: 'Catherine', },
+            ]);
+            }, 1000);
+        }
+        // Function to display users
+        function displayUsers(users) {
+            const userListDiv = document.querySelector('#userList');
+            users.forEach((user) => {
+            const userDiv = document.createElement('div');
+            userDiv.innerhtml = `${user.name}`;
+            userListDiv.appendChild(userDiv);
+            });
+        }
+        // Fetch and display users
+        fetchUsers((user) => {
+        displayUsers(users)
+        });
+    </script>
 </body>
 </html>
