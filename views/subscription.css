@@ -207,6 +207,7 @@ body {
 
 .newelement{
     animation: myAnim 2s ease 0s 1 normal forwards;
+    width: 100%;
 }
 
 .newmovingimage{
