@@ -369,6 +369,10 @@ html {
 	transition: all 0.5s ease-out;
 }
 
+.newpages img{
+  width: 80%;
+}
+
 .newpages li.active {
 	color: orange;
 	transform: scale(1.1);
