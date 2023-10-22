@@ -24,6 +24,19 @@ body {
     text-align: center;
     background-color: #1f2937;
     color: white;
+    margin-top: 4%;
+}
+
+.search{
+  margin: 4%;
+  padding: 1%;
+  width: 60%;
+  height: 36px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  text-decoration: black;
+  text-transform: capitalize;
+  font-size: 100%;
 }
 
 .container {

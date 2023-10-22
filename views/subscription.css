@@ -6,6 +6,7 @@
 .aboutsubscription{
     margin: 0;
     padding: 0;
+    width: 100%;
     background-color: #1f2937;
     
 }
@@ -205,6 +206,10 @@ body {
     } 
 }
 
+.heading img{
+  width: 100%;
+}
+
 .newelement{
     animation: myAnim 2s ease 0s 1 normal forwards;
     width: 100%;
@@ -228,7 +233,9 @@ body {
 
 .newheading1{
     margin: auto;
+    padding: 0;
     margin-top: 10px;
+    width: 100%;
     text-align: center;
     font-size: 18px;
     color: white;

@@ -256,7 +256,7 @@ textarea:focus {
   outline: none;
 }
 .wrapper {
-  width: 35rem;
+  width: 100%;
   background-color: white;
 }
 .letter {
@@ -264,7 +264,7 @@ textarea:focus {
   left: 0;
   right: 0;
   top: 0;
-  width: 30rem;
+  width: 60%;
   margin: auto;
   perspective: 60rem;
 }
@@ -402,4 +402,8 @@ textarea:focus {
 }
 */
 
+
+.contact{
+  width: 100%;
+}
 
