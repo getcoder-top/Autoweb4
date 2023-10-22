@@ -40,7 +40,7 @@ while True:
         # imglink = imgdata.find('img')
         img = 'https://yastatic.net/q/logoaas/v2/Yandex.svg?single=1&viewBox=1'
         desc = jobdata.find('div',{'class':'lc-jobs-vacancy__description'}).text
-        jobtype = 'filltime'
+        jobtype = 'fulltime'
         print(title)
         
         title = str(title).replace("'","")
