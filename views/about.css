@@ -338,6 +338,7 @@ textarea:focus {
   transition: all 0.3s 2s;
   transform: translateY(9rem);
   z-index: -9999;
+  text-align: center;
 }
 .sent {
   & .letter {
