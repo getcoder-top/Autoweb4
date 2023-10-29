@@ -4,7 +4,7 @@ var router = express.Router();
 var app = express();
 var mysql = require("mysql");
 var bodyParser = require("body-parser")
-var sendmail = require("./modes/mail")
+// var sendmail = require("./modes/mail")
 
 app.set("view engine", "ejs")
 
