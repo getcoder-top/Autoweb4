@@ -636,6 +636,16 @@ p.attribution a {
 /* new menu  */
 
 
+.newmenu{
+  display: none;
+  background-color: #17141d;
+  margin: 0;
+  padding: 1%;
+  width: 100%;
+  height: 4%;
+}
+
+
 #hamburger-icon {
   margin: auto 0;
   display: none;
@@ -673,11 +683,12 @@ p.attribution a {
 
 .mobile-menu {
   display: none;
-  position: absolute;
+  /* position: absolute; */
   top: 50px;
   left: 0;
   height: calc(100vh - 50px);
   width: 100%;
+  background-color: #17141d;
 }
 
 .mobile-menu li {
@@ -690,6 +701,9 @@ p.attribution a {
 
   .newpages .header{
     display: none;
+  }
+  .newmenu{
+    display: block;
   }
   #hamburger-icon{
     display: block;
@@ -804,7 +818,7 @@ p.attribution a {
   overflow: hidden;
 }
 
-.newmenu{
+/* .newmenu{
   display: none;
   height: 100%;
   width: 30px;
@@ -812,4 +826,4 @@ p.attribution a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */

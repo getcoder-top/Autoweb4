@@ -87,8 +87,14 @@ h1{
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 
+    .box{
+        width: 100%;
+    }
+    .ad{
+        width: 0%;
+    }
     .box { 
        font-size: 2em; 
     }
