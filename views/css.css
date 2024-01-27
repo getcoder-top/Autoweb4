@@ -368,9 +368,6 @@ html {
 	letter-spacing: 3.5px;
 	transition: all 0.5s ease-out;
 }
-.menu ul .newmenupage{
-  text-decoration: none;
-}
 
 .newpages img{
   width: 80%;
@@ -618,13 +615,13 @@ p.attribution a {
 }
 
 /* Responsive hack */
-@media only screen and (min-width: 600px) and (max-width: 1212px) {
+@media only screen and (min-width: 499px) and (max-width: 1212px) {
 	.wrapper {
 		width: 500px;
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 498px) {
 	.wrapper {
 		width: 300px;
 	}
@@ -635,159 +632,66 @@ p.attribution a {
 	}
 }
 
-.newphonemenu body {
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
-.newphonemenu a {
-  text-decoration: none;
-  color: #1E1E23;
-  opacity:1;
-  font-family: 'work sans', sans serif;
-  font-size: 1.5em;
-  font-weight: 400;
-  transition: 200ms;
-}
-.newphonemenu a:hover {
-  opacity:0.5;
-}
-.newphonemenu ul {
-  padding: 0;
-  list-style-type: none;
-}
 
-.newphonemenu{
+/* new menu  */
+
+
+#hamburger-icon {
+  margin: auto 0;
   display: none;
+  cursor: pointer;
 }
 
-.newphonecontainer {
-  margin-top: 50px; 
-  Display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.newphonemenu .phone {
-  background-color: #36383F;
-  border-radius: 40px;
-  width: 300px;
-  height: 600px;
-  Display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 30px 50px 100px #85888C;
-}
-.newphonemenu .content {
-  border: 1px solid #36383F;
-  border-radius: 20px;
-  width: 94%;
-  height: 91%;
-  background-color: #F5F6FA;
-  overflow: hidden;
-}
-.newphonemenu nav {
-  background-color: #1E1E23;
-  height: 65px;
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
 
-.newphonemenu #menuToggle {
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 25px;
-  left: 25px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.newphonemenu #menuToggle input
-{
-  display: flex;
-  width: 40px;
-  height: 32px;
+.mobile-menu {
+  display: none;
   position: absolute;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 2;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
 }
 
-.newphonemenu #menuToggle span
-{
-  display: flex;
-  width: 29px;
-  height: 2px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #ffffff;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 5px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+.mobile-menu li {
+  margin-bottom: 10px;
 }
 
-.newphonemenu #menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-3px, -1px);
-  background: #36383F;
-}
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-.newphonemenu #menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-.newphonemenu #menu
-{
-  position: absolute;
-  width: 180px;
-  height: 400px;
-  box-shadow: 0 0 10px #85888C;
-  margin: -50px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background-color: #F5F6FA;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-.newphonemenu #menu li
-{
-  padding: 10px 0;
-  transition-delay: 2s;
-}
-
-.newphonemenu #menuToggle input:checked ~ ul
-{
-  transform: none;
-}
-
- /* Phone Menu end */
+/* new menu end */
 
 @media only screen and (max-width: 600px) {
 
-  .newphonemenu{
+  .newpages .header{
+    display: none;
+  }
+  #hamburger-icon{
     display: block;
   }
   .jobsfilter{
@@ -813,7 +717,8 @@ p.attribution a {
   .searchtext{
     border-radius: 10px;
   }
-  
+
+
   /* .newmenu{
     display: flex;
   } */
