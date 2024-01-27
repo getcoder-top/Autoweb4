@@ -139,7 +139,8 @@ app.get("/search",(requests,response) =>{
             console.log(err);
         }
         else{
-            response.render('index',{data: newdata});
+            var newdata1 = [{tests : "No Job Found for" + company}];
+            response.render('index',{data: newdata1});
         }
     })
     }
@@ -196,6 +197,46 @@ app.post('/newjobs',(request,response) =>{
     //     return response.redirect('/');
     // }
 
+})
+
+app.get("/newjobpostpage", (request, response) =>{
+    
+    response.render("newjob");
+})
+
+app.get("/newjobpost", (requests,response) =>{
+
+    companyname = requests.query.company;
+    title = requests.query.title;
+    description1 = requests.query.description;
+    location = requests.query.location;
+    salary = requests.query.salary;
+    joblink = requests.query.joblink;
+    imglink = requests.query.imagelink;
+    category = requests.query.category;
+    jobtype = requests.query.jobtype;
+
+    console.log(companyname);
+    console.log(title)
+
+    description = description1.replace(/^a-zA-Z0-9]/g,);
+    description = description.replace(",", " ");
+
+    // var newjobdata = "INSERT INTO jobs4 (sno,title,description,link,company,location,category,imglink,jobtype) VALUES (" + "'1'" +","+title+ "','" + description + "','"  + companyname+"link" + "','" + companyname + "','" + location + "','" + "featured" + "','" + imglink + "','" + jobtype + "')";
+
+    var newjobdata = 'INSERT INTO jobs4 (sno,title,desc4,link,company,location,category,imglink,jobtype) VALUES (' + '"1"' +',"'+title+ '","' + description + '","'  + joblink + '","' + company + '","' + location + '","' + "featured" + '","' + imglink + '","' + jobtype + '")';
+
+    database.query(newjobdata, (err) =>{
+        if(err){
+            console.log(err);
+        }
+        else{
+            console.log("Job Posted")
+            response.render("newjob");
+        }
+    });
+
+    // response.render("newjob");
 })
 
 app.get('/sendmail', (request,response) =>{

@@ -9,6 +9,7 @@
     width: 60%;
     height: 60%;
     border-right: 1px solid black;
+    font-size: 150%;
 }
 
 .job{
@@ -28,6 +29,14 @@ h1{
     height: 20%;
     color: white;
     font-family: sans-serif;
+}
+
+.newheading{
+    margin: 2%;
+    padding: 0;
+    font-size: 150%;
+    text-decoration: none;
+    text-transform: capitalize;
 }
 
 .job div{
@@ -77,4 +86,12 @@ h1{
     opacity: 1;
 }
 
+
+@media only screen and (max-width: 480px) {
+
+    .box { 
+       font-size: 2em; 
+    }
+ 
+ }
 

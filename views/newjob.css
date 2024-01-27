@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.newjobpage{
+    margin: auto;
+    width: 80%;
+}
+
+.submit{
+    margin: auto;
+    margin-left: 40%;
+    padding: 0;
+    width: 20%;
+    height: 40px;
+    text-align: center;
+}
