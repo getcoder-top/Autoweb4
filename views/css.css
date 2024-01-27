@@ -257,6 +257,13 @@
     background-color: #0095ff;
 }
 
+.newmessage{
+  margin: auto;
+  margin-top: 1%;
+  padding: 0;
+  text-align: center;
+}
+
 
 /* CSS */
 button{
