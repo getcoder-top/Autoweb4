@@ -656,6 +656,7 @@ p.attribution a {
 .newheading{
   margin: auto;
   text-align: center;
+  display: none;
 }
 
 
@@ -714,6 +715,9 @@ p.attribution a {
 
   .newpages .header{
     display: none;
+  }
+  .newheading{
+    display: block;
   }
   .newmenu{
     display: block;
