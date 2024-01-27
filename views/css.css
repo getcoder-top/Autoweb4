@@ -618,13 +618,13 @@ p.attribution a {
 }
 
 /* Responsive hack */
-@media only screen and (min-width: 499px) and (max-width: 1212px) {
+@media only screen and (min-width: 600px) and (max-width: 1212px) {
 	.wrapper {
 		width: 500px;
 	}
 }
 
-@media only screen and (max-width: 498px) {
+@media only screen and (max-width: 600px) {
 	.wrapper {
 		width: 300px;
 	}
@@ -785,7 +785,7 @@ p.attribution a {
 
  /* Phone Menu end */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 
   .newphonemenu{
     display: block;

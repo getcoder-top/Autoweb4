@@ -139,7 +139,7 @@ app.get("/search",(requests,response) =>{
             console.log(err);
         }
         else{
-            var newdata1 = [{tests : "No Job Found for" + company}];
+            var newdata1 = [{title : "", link : "", company : "", category : "", location : "", jobtype : "",  tests : "No Job Found for" + company}];
             response.render('index',{data: newdata1});
         }
     })
