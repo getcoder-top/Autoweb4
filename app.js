@@ -238,6 +238,21 @@ app.get("/newjobpost", (requests,response) =>{
     // response.render("newjob");
 })
 
+app.get('/subscribe', (requests, response) =>{
+    
+    response.render("subscriptionai");
+})
+
+app.get('/blogs', (requests, response) =>{
+
+    response.render("addpages");
+})
+
+app.get("/about", (requests, response) =>{
+
+    response.render("about")
+})
+
 app.get('/sendmail', (request,response) =>{
     // newmail = request.query.email;
 

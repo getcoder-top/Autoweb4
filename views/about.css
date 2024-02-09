@@ -26,7 +26,8 @@ h1{
 }
 
 .heading h1,h2{
-    transition: all 1s ease-out;
+  text-align: center;
+  transition: all 1s ease-out;
 }
 
 .main{
@@ -260,7 +261,7 @@ textarea:focus {
   background-color: white;
 }
 .letter {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   top: 0;
@@ -285,7 +286,7 @@ textarea:focus {
   }
 }
 .envelope {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   top: 0;
@@ -300,7 +301,7 @@ textarea:focus {
   opacity: 0;
 }
 .envelope.front::before, .envelope.front::after {
-  position: absolute;
+  position: relative;
   display: block;
   width: 12rem;
   height: 6rem;
@@ -367,7 +368,7 @@ textarea:focus {
   }
 }
 .centered {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   margin: 1rem auto;

@@ -711,7 +711,7 @@ p.attribution a {
 
 /* new menu end */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
   .newpages .header{
     display: none;
@@ -749,6 +749,11 @@ p.attribution a {
     border-radius: 10px;
   }
 
+  .mobile-menu a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+  }
 
   /* .newmenu{
     display: flex;

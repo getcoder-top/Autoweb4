@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="NewBottom.css">
+    <link rel="stylesheet" href="newmenu.css">
 </head>
 <body>
     <div class="newpages">
@@ -35,6 +37,26 @@
         </div>
        </div>
        </div>
+
+       <!-- new menu -->
+
+       <div class="newmenu">
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+         <ul class="mobile-menu">
+           <li><a><form action="aurjobs10.onrender.com">Home</form></a></li>
+           <li><form action="/blogs">Blogs</form></li>
+           <li><form action="/subscribe"><input class="newmenusubscribeai" type="submit" value="Subscrition.ai"></form></li>
+           <li id="login"><form action="/newjobpost"><input type="submit" value="Hire"></form></li>
+           <li id="signup"><a href="about.html">about</a></li>
+         </ul>
+       </div>
+       <h1 class="newheading">Aurjobs</h1>
+       </div>
+
+       
     <section class="heading">
         <h1>Aurjobs</h1>
         <h2>Find your jobs today</h2>
@@ -93,12 +115,46 @@
 <p class="result-message centered">Thank you for your message</p>
         </p>
     </section>
+
+
+    <!-- Bottom code -->
+
+    <section class="bottom">
+        <div class="newbottomcontact">
+            <h1>Address</h1>
+            <h4>New Delhi, India</h4>
+            <p><h4>Aurjobsa@gmail.com</h4></p>
+            <p><h4>Phone</h4></p>
+        </div>
+        <div class="newbottomlinks">
+            <h1>Latest</h1>
+            <div class="newlinks">
+            <div><a href="https://www.linkedin.com/company/aurjobs"><img src="linkedin.svg" alt=""></a></div>
+            <div><a href="https://www.instagram.com/aurjobsofficial/"><img src="instagram.svg" alt=""></a></div>
+            <div><a href="https://www.facebook.com/people/AurjobsOfficial/61556103504038"><img src="facebook.svg" alt=""></a></div>
+            <div><a href="https://twitter.com/ChaubeyAnshika_"><img src="twitter.svg" alt=""></a></div>
+            </div>
+            <p>Contact with us To stay Updated</p>
+        </div>
+        <div class="newbottompages">
+            <h1>Pages</h1>
+            <p><h4>Home</h4></p>
+            <p><h4>Blogs</h4></p>
+            <p><h4>Resume Review</h4></p>
+            <p><h4>Subscription.ai</h4></p>
+            <p><h4>About</h4></p>
+        </div>
+    </section>
     <script>
         function addClass() {
             document.body.classList.add("sent");
           }
           
           sendLetter.addEventListener("click", addClass);
+
+          function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
     </script>
 </body>
 </html>

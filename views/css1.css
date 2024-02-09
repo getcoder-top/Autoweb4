@@ -87,7 +87,7 @@ h1{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
     .box{
         width: 100%;
@@ -97,6 +97,30 @@ h1{
     }
     .box { 
        font-size: 2em; 
+    }
+
+    .job div{
+        margin-top: 20px;
+    }
+    .job h1{
+        font-size: 40px;
+        padding: 4px;
+    }
+    .job h2{
+        font-size: 24px;
+        padding: 1px;
+    }
+    .jobdetail{
+        margin: auto;
+        padding: 1%;
+        text-align: justify;
+        font-size: 20px;
+    }
+    .jobdetail button{
+        margin: auto;
+        width: 60%;
+        text-align: center;
+        margin-top: 40px;
     }
  
  }
