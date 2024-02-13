@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="subscription.css">
+    <link rel="stylesheet" href="newjob.css">
+</head>
+<body>
+    <section class="options">
+        <div class="newjob">
+            <h1>New Job</h1>
+        </div>
+        <div class="jo">
+            <h1>Jobs</h1>
+        </div>
+    </section>
+    <section class="newjobpage">
+    <div class="newjobpost">
+        <form action="/newjobpost">
+            <h1>Create a new Job</h1>
+            <div class="nice-form-group">
+                <label>Company Name</label>
+                <input type="text" class="company" name="company" id="company">
+            </div>
+            <div class="nice-form-group">
+                <label>Job Title</label>
+                <input type="text" class="title" name="title" id="title">
+            </div>
+            <div class="nice-form-group">
+                <label>Job Description</label>
+                <input type="text" name="description" id="description">
+            </div>
+            <div class="nice-form-group">
+                <label>Job Location</label>
+                <input type="text" name="location" id="location">
+            </div>
+            <div class="nice-form-group">
+                <label>Job Salary</label>
+                <input type="text" name="salary" id="salary">
+            </div>
+            <div class="nice-form-group">
+                <label>Job Link</label>
+                <input type="url" name="joblink" id="joblink">
+            </div>
+            <div class="nice-form-group">
+                <label>Image Link</label>
+                <input type="text" name="imagelink" id="imagelink">
+            </div>
+            <div class="nice-form-group">
+                <label>category</label>
+                <input type="text" name="category" id="category">
+            </div>
+            <div class="nice-form-group">
+                <label>jobtype</label>
+                <input type="text" name="jobtype" id="jobtype">
+            </div>
+            <button type="submit" class="submit">Submit</button>
+
+        </form>
+    </div>
+    </section>
+</body>
+</html>
