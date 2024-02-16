@@ -711,7 +711,7 @@ p.attribution a {
 
 /* new menu end */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
 
   .newpages .header{
     display: none;

@@ -253,6 +253,11 @@ app.get("/about", (requests, response) =>{
     response.render("about")
 })
 
+app.get("/aurjobsitemap", (requests, response) =>{
+
+    response.sendFile(__dirname + '/aurjobsitemap.xml')
+})
+
 app.get('/sendmail', (request,response) =>{
     // newmail = request.query.email;
 
