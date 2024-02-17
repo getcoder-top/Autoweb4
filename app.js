@@ -157,7 +157,7 @@ app.get('/itempage',(requests,response) =>{
     newlink = requests.query.joblink;
 
     console.log(newlink)
-    var jobpage = 'SELECT * from jobs4 where sno = ' + "'"+newlink+"'";
+    var jobpage = 'SELECT * from jobs4 where link = ' + "'"+newlink+"'";
     database.query(jobpage,(err,jobdata,fields) =>{
         if(err){
             console.log(err);
