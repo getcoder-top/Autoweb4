@@ -759,6 +759,10 @@ p.attribution a {
     font-size: 18px;
   }
 
+  .newheadingimage{
+    width: 10%;
+  }
+
   /* .newmenu{
     display: flex;
   } */
