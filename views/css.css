@@ -755,6 +755,10 @@ p.attribution a {
     text-transform: capitalize;
   }
 
+  .jobcompany{
+    font-size: 18px;
+  }
+
   /* .newmenu{
     display: flex;
   } */
