@@ -255,7 +255,7 @@ app.get("/about", (requests, response) =>{
 
 app.get("/aurjobsitemap", (requests, response) =>{
 
-    response.sendFile(__dirname + '/aurjobsitemap.xml')
+    response.sendFile(__dirname + '/Sitemap.xml');
 })
 
 app.get('/sendmail', (request,response) =>{
