@@ -223,7 +223,7 @@ app.get("/newjobpost", (requests,response) =>{
 
     // var newjobdata = "INSERT INTO jobs4 (sno,title,description,link,company,location,category,imglink,jobtype) VALUES (" + "'1'" +","+title+ "','" + description + "','"  + companyname+"link" + "','" + companyname + "','" + location + "','" + "featured" + "','" + imglink + "','" + jobtype + "')";
 
-    var newjobdata = 'INSERT INTO jobs4 (sno,title,desc4,link,company,location,category,imglink,jobtype) VALUES (' + '"1"' +',"'+title+ '","' + description + '","'  + joblink + '","' + company + '","' + location + '","' + "featured" + '","' + imglink + '","' + jobtype + '")';
+    var newjobdata = 'INSERT INTO jobs4 (sno,title,desc4,link,company,location,category,imglink,jobtype) VALUES (' + '"1"' +',"'+title+ '","' + description + '","'  + joblink + '","' + companyname + '","' + location + '","' + "featured" + '","' + imglink + '","' + jobtype + '")';
 
     database.query(newjobdata, (err) =>{
         if(err){
@@ -255,7 +255,7 @@ app.get("/about", (requests, response) =>{
 
 // app.get("/aurjobsitemap", (requests, response) =>{
 
-//     response.sendFile(__dirname + '/Sitemap.xml');
+//     response.sendFile(__dirname + '/aurjobsitemap.xml')
 // })
 
 app.get('/sendmail', (request,response) =>{
