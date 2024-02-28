@@ -278,7 +278,7 @@ app.get('/sendmail', (request,response) =>{
 
 port = process.env.PORT;
 
-app.listen(4000,()=>console.log('express server is running at 3000'))
+app.listen(3000,()=>console.log('express server is running at 3000'))
 
 // app.use('/', indexRouter)
 // app.use('/users', usersRouter);
