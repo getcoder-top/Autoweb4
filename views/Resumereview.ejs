@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurjobs : Subscription.ai</title>
+    <link rel="stylesheet" href="resumereview.css">
+</head>
+<body>
+  <div class="heading">
+  <img class="heading" src="aurjobs.png" alt="aurjobs logo">
+  </div>
+  <div class="maincontainer">
+    <h1>Resume Review With The Power of Ai</h1>
+    <form action="/resume" enctype="multipart/form-data" method="post">
+    <section class="main">
+      <div class="container">
+        <div class="uploadresume">
+          <input type="file" name="resume" id="resume">
+        </div>
+        <div class="uploadjd">
+          <input type="file" name="resume" id="resume">
+        </div>
+        <button type="submit">Submit</button>
+      </div>
+    </section>
+    </form>
+    <section class="response">
+      <p class="responsemain">
+        <h4>Review from ai</h4>
+        <%= data %>
+      </p>
+    </section>
+    </div>
+</body>
+</html>

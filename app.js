@@ -5,6 +5,13 @@ var app = express();
 var mysql = require("mysql");
 var bodyParser = require("body-parser")
 // var sendmail = require("./modes/mail")
+var fs = require("fs");
+var multer = require("multer");
+var pdf = require("pdf-parse");
+const GoogleGenerativeAI = require("@google/generative-ai").GoogleGenerativeAI;
+const dotenv = require("dotenv").config;
+
+dotenv();
 
 app.set("view engine", "ejs")
 
@@ -252,6 +259,73 @@ app.get("/about", (requests, response) =>{
 
     response.render("about")
 })
+
+
+// resume review
+
+
+app.get("/review", (requests, response) =>{
+
+    response.render("Resumereview", {data : ""});
+})
+
+const newfile = multer.diskStorage({
+    destination : (req, res, cb) =>{
+        cb(null, "./resumereview");
+    },
+
+    filename : (req, file, cb) =>{
+        cb(null, file.originalname);
+    }
+})
+
+var upload = multer({storage : newfile}).array("resume", 2);
+
+app.post("/resume", upload, (req, res) =>{
+
+    // var Resume = req.query.resume;
+    // var Jobdescription = req.query.job;
+
+    const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
+
+    const model = genAI.getGenerativeModel({ model: "gemini-pro"});
+
+    let dataBuffer1 = fs.readFileSync("./resumereview/resume.pdf");
+    pdf(dataBuffer1).then((data) =>{
+
+        // console.log(data.text);
+    var Resume = data.text;
+
+    let newdataBuffer = fs.readFileSync("./resumereview/jd.pdf");
+    pdf(newdataBuffer).then((newdata) =>{
+
+    var Jobdescription = newdata.text;
+
+    async function run() {
+        // For text-only input, use the gemini-pro model
+        try{
+        const prompt = "I provide you resume and job description, you need to review the resume on the basis of job description and provide on rating from 10 and a short 100 words review of resume, use strictness. resume : "+Resume+"and Job Description : "+Jobdescription;
+      
+        const result = await model.generateContent(prompt);
+        const response = await result.response;
+        const text = response.text();
+        // console.log(text);
+
+        res.render("Resumereview", {data : text});
+        }
+        catch(err){
+          console.log(err);
+        }
+    }
+    run();
+})
+})
+      
+})
+
+
+// resume review ends
+
 
 // app.get("/aurjobsitemap", (requests, response) =>{
 
