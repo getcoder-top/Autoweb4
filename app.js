@@ -301,17 +301,31 @@ app.post("/resume", upload, (req, res) =>{
 
     var Jobdescription = newdata.text;
 
+    // Code for deleting the files uploaded
+    fs.unlink("resumereview/resume.pdf", (err) =>{
+        if(err){
+        console.log(err);
+        }
+    });
+
+    fs.unlink("resumereview/jd.pdf", (err) =>{
+        if(err){
+        console.log(err);
+        }
+    });
+
+    // code for generating gemini response
     async function run() {
         // For text-only input, use the gemini-pro model
         try{
-        const prompt = "I provide you resume and job description, you need to review the resume on the basis of job description and provide on rating from 10 and a short 100 words review of resume, use strictness. resume : "+Resume+"and Job Description : "+Jobdescription;
+        const prompt = "I provide you resume and job description, you need to review the resume on the basis of job description and provide on rating from 10 and a short 200 words review of resume, use strictness. resume : "+Resume+"and Job Description : "+Jobdescription;
       
         const result = await model.generateContent(prompt);
         const response = await result.response;
         const text = response.text();
         // console.log(text);
 
-        res.render("Resumereview", {data : text});
+        res.render("Resumereviewresponse", {data : text});
         }
         catch(err){
           console.log(err);
