@@ -46,13 +46,13 @@
     <loc>https://sourcing.aurjobs.com/</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sourcing.aurjobs.com/candidate-search</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <!-- Subdomain: screening.aurjobs.com -->
@@ -60,7 +60,7 @@
     <loc>https://screening.aurjobs.com/</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 
   <!-- Subdomain: test.aurjobs.com -->
@@ -68,7 +68,7 @@
     <loc>https://test.aurjobs.com/</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
