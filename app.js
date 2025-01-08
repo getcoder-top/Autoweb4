@@ -364,7 +364,7 @@ app.get('/sendmail', (request,response) =>{
 //     })
 // })
 app.get('/sitemap.xml', (request, response)=>{
-        response.sendfile(__dirname+ '/sitemap.xml');
+        response.sendFile(__dirname+ '/Sitemap.xml');
 })
 
 
